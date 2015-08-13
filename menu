@@ -1,0 +1,63 @@
+// area del cuadrado saul mendez.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int main ()
+{
+   int area, promedio, mayor, lado, n1, n2, n3, A, B, opcion;
+   do {
+	   cout<< "****menu****\n";
+	   cout<< "1) Area del cuadrado:";
+	   cout<< "2) promedio de tres numeros:";
+	   cout<< "3) meyor de dos numeros:";
+	   cout<< "0) salir\n";
+	   cout<< "opcion:";
+	   cin>> opcion; 
+	   switch (opcion)
+	   {
+	     case 1:
+	        cout<< "ingrese el lado del cuadrado:";
+	        cin>> lado;
+	        area=lado*lado;
+			cout<< "el area del cudrado es:";
+			cout<< area;
+			break;
+		 case 2:
+			 cout<< "ingrese primer numero:";
+			 cin>> n1;
+			 cout<< "ingrese segundo numero:";
+			 cin>> n2;
+			 cout<< "ingrese tercer numero:";
+			 cin>> n3;
+			 promedio=(n1+n2+n3)/3;
+			 cout<< "el promedio de los numeros es:";
+			 cout<< promedio;
+			 break;
+		 case 3:
+			 cout<< "ingrese primer numero:";
+			 cin>> A;
+			 cout<< "ingrese segundo numero:";
+			 cin>> B;
+			 if (A>B)
+			    {
+                  cout<< "el mayor es:";
+				  cout<< A;
+				  break;
+				}
+			 
+			 else (B>A);
+			    {
+                   cout<< "el mayor es:";
+				   cout<< B;
+				   break;
+				}
+				
+		 case 0:
+			 cout<< "salir";
+			 break;
