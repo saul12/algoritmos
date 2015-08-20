@@ -1,0 +1,26 @@
+// funcion saul.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdlib.h"
+#include "stdio.h"
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+float area_circulo(float r);
+int main ()
+ {
+	float radio, area;
+	cout<<" ingrese el radio de la circunferencia:";
+	cin>> radio;
+	area = area_circulo(radio);
+	cout<<"el area de la circunferencia es:"
+    cin<< r;
+	return 0;
+ }
+float area_circulo(float r)
+	{
+	 float area = 3.141516*r*r;
+	 return area;
+    }
