@@ -1,0 +1,40 @@
+// saul mendez.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdlib.h"
+#include "stdio.h"
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+void main()
+{
+  int i, n;
+  float afp=0.121, iva=0.13, sm=1420, promedio, sb, suma=0, sn;
+  cout<<endl<<"Ingrese el numero de empleados:  ";
+  cin>>n;
+  for(i=0; i<n; i++)
+   {
+      cout<<endl<<"Ingrese el salario del empleado:  "<<i+1;
+      cin>>sb;
+  if(sb>=2840)
+	 { if (sb>1500)
+         {sn=sb-(sb*afp)-(sb*iva)-(sb*0.01);
+         }
+	 else{
+         sn= sb-((sb*afp)+(sb*iva));
+	     suma=suma+sn;
+	     }
+     }
+     else
+	     {
+	      sn=sb-(sb*afp);
+          suma=suma+sn;
+	 }
+   }
+promedio=suma/n;
+cout<<endl<<"El promedio de los salarios es:  "<<promedio;
+getch();
+
+}
